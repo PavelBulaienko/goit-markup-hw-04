@@ -114,6 +114,15 @@ a {
 .addr-indent:last-child {
   margin-right: 0;
 }
+.addr .mail::before {
+  display: inline;
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-image: url("../images/svg/contact/envelope.svg");
+  background-size: contain;
+  background-position: center;
+}
 .button {
   display: inline-block;
   margin-top: 50px;
