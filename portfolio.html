@@ -25,8 +25,20 @@
                     </ul>
                 </nav>
                 <address class="addr">
-                    <a href="mailto:info@example.com" class="addr-indent">info@devstudio.com</a>
-                    <a href="tel:+380961111111" class="addr-indent">+38 096 111 11 11</a>
+                    <a href="mailto:info@example.com" class="addr-indent">
+                        <svg class="mail-icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                    
+                    <a href="tel:+380961111111" class="addr-indent">
+                        <svg class="tel-icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+
+                    </a>
                 </address>
             </div>
         </div>
@@ -119,12 +131,49 @@
 
     <footer class="footer">
         <div class="container">
-            <a href="./index.html" class="logo"><span class="web">Web</span><span class="stud">Studio</span></a>
-            <address id="contacts" class="contacts">
-                <p>Г. Киев, пр-т Леси Украинки, 26</p>
-                <a href="mailto:info@example.com">info@example.com</a>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
-            </address>
+            <div class="combine-footer">
+                <div>
+                    <a href="./index.html" class="logo"><span class="web">Web</span><span class="stud">Studio</span></a>
+                    <address id="contacts" class="contacts">
+                        <p>Г. Киев, пр-т Леси Украинки, 26</p>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    </address>
+                </div>
+                <div class="sotial-div">
+                    <h2 class="title-footer-sotial-list">присоединяйтесь</h2>
+                    <ul class="sotial-list">
+                        <li class="list sotial-list-item">
+                            <a href="#" class="sotial-link">
+                                <svg class="sotial-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list sotial-list-item">
+                            <a href="#" class="sotial-link">
+                                <svg class="sotial-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list sotial-list-item">
+                            <a href="#" class="sotial-link">
+                                <svg class="sotial-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list sotial-list-item">
+                            <a href="#" class="sotial-link">
+                                <svg class="sotial-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

@@ -65,7 +65,7 @@ h3 {
 .header-div {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .logo {
   font-family: Raleway, sans-serif;
@@ -95,7 +95,7 @@ h3 {
   margin-right: 49px;
 }
 .nav-item:last-child {
-  margin-right: 331px;
+  margin-right: 0;
 }
 .nav > li > a {
   font-weight: 500;
@@ -111,6 +111,11 @@ h3 {
 .nav > li > a:hover {
   color: var(--blue);
 }
+.addr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .addr > a {
   font-style: normal;
   font-weight: 500;
@@ -125,9 +130,31 @@ h3 {
 }
 .addr-indent {
   margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .addr-indent:last-child {
   margin-right: 0;
+}
+
+.addr-indent:hover .mail-icon,
+.addr-indent:hover .tel-icon,
+.addr-indent:focus .mail-icon,
+.addr-indent:focus .tel-icon {
+  fill: var(--blue, #2196f3);
+}
+.mail-icon {
+  fill: var(--color3, #757575);
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+.tel-icon {
+  fill: var(--color3, #757575);
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
 }
 .filter .filter-btn {
   background-color: var(--lightgrey);
@@ -224,4 +251,113 @@ h3 {
 }
 .contacts a:not(:last-child) {
   margin-bottom: 9px;
+}
+.sotial-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.sotial-list-item {
+  width: 44px;
+  height: 44px;
+}
+.sotial-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+.sotial-list-item:hover,
+.sotial-list-item:focus {
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+.sotial-list-item:hover .sotial-icon,
+.sotial-list-item:focus .sotial-icon {
+  fill: var(--white);
+}
+.sotial-icon {
+  fill: var(--color1, #afb1b8);
+  width: 20px;
+  height: 20px;
+}
+.sotial-icon:hover,
+.sotial-icon:focus {
+  fill: var(--blue);
+}
+.footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-bg);
+}
+.footer .logo .stud {
+  color: var(--white);
+}
+.footer .logo {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+.footer .sotial-list {
+  margin: 0;
+  padding: 0;
+}
+.contacts p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 9px;
+}
+.contacts a {
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--transparentwhite);
+}
+.contacts a:not(:last-child) {
+  margin-bottom: 9px;
+}
+.title-footer-sotial-list {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.combine-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .sotial-div {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+.footer .sotial-icon {
+  fill: var(--white);
+  width: 20px;
+  height: 20px;
+}
+.footer .sotial-link {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .sotial-list-item {
+  margin-right: 10px;
+}
+.footer .sotial-list-item:last-child {
+  margin-right: 0;
 }
