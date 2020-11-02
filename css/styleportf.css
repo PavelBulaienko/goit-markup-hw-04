@@ -276,24 +276,20 @@ h3 {
   width: 44px;
   height: 44px;
 }
-.sotial-list-item:hover,
-.sotial-list-item:focus {
+.sotial-list-item .sotial-link:hover,
+.sotial-list-item .sotial-link:focus {
   border: 1px solid var(--blue);
   background-color: var(--blue);
   border-radius: 50%;
 }
-.sotial-list-item:hover .sotial-icon,
-.sotial-list-item:focus .sotial-icon {
+.sotial-list-item .sotial-link:hover .sotial-icon,
+.sotial-list-item .sotial-link:focus .sotial-icon {
   fill: var(--white);
 }
 .sotial-icon {
   fill: var(--color1, #afb1b8);
   width: 20px;
   height: 20px;
-}
-.sotial-icon:hover,
-.sotial-icon:focus {
-  fill: var(--blue);
 }
 .footer {
   max-width: 1600px;

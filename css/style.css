@@ -327,24 +327,20 @@ h3 {
   width: 44px;
   height: 44px;
 }
-.sotial-list-item:hover,
-.sotial-list-item:focus {
-  border: 1px solid var(--blue);
-  background-color: var(--blue);
-  border-radius: 50%;
-}
-.sotial-list-item:hover .sotial-icon,
-.sotial-list-item:focus .sotial-icon {
-  fill: var(--white);
-}
 .sotial-icon {
   fill: var(--color1, #afb1b8);
   width: 20px;
   height: 20px;
 }
-.sotial-icon:hover,
-.sotial-icon:focus {
-  fill: var(--blue);
+.sotial-list-item .sotial-link:hover,
+.sotial-list-item .sotial-link:focus {
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+.sotial-list-item .sotial-link:hover .sotial-icon,
+.sotial-list-item .sotial-link:focus .sotial-icon {
+  fill: var(--white);
 }
 .regular-customers {
   padding: 94px 0;
@@ -372,17 +368,17 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-.regular-customers .list-regular-customers .item-list-regular-customers:hover,
-.regular-customers .list-regular-customers .item-list-regular-customers:focus {
+.regular-customers .list-regular-customers .link-regular-customers:hover,
+.regular-customers .list-regular-customers .link-regular-customers:focus {
   border: 1px solid var(--blue);
 }
 .regular-customers
   .list-regular-customers
-  .item-list-regular-customers:hover
+  .link-regular-customers:hover
   .icon-regular-customers,
 .regular-customers
   .list-regular-customers
-  .item-list-regular-customers:focus
+  .link-regular-customers:focus
   .icon-regular-customers {
   fill: var(--blue);
 }
